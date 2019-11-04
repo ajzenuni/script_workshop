@@ -9,7 +9,6 @@ def gethost():
     for host in host_list:
         HOST_ID = host['entityId']
         break
-    dumpwithpickle()
 
 def posthost_tag(tag):
     global URL, API, HOST_ID
@@ -54,6 +53,7 @@ def main(script, tag):
     
     if script == 'gethost':
         gethost()
+        dumpwithpickle()
     elif script == 'post_tag' and tag:
         loadwithpickle()
         posthost_tag(tag)

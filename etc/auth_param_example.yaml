@@ -1,0 +1,3 @@
+auth:
+  - url: https://<tenant_UUID>.com
+    api: {api-token}
